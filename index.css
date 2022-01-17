@@ -551,3 +551,22 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: #343a40;
+}
+footer h4 {
+  color: #dee2de;
+}
+#sec-icons {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 37%;
+}
+footer i {
+  color: white;
+}
