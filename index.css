@@ -492,10 +492,10 @@ p {
   font-weight: bold;
   border-bottom: none;
   transition: 0.5s;
-  width: fit-content;
 }
 #read:hover {
   border-bottom: 1px solid #4e66f8;
+  width: fit-content;
 }
 .eigth-group {
   display: flex;
@@ -515,6 +515,7 @@ p {
 #eigth2-content,
 #eigth3-content {
   width: fit-content;
+  transition: 0.5s;
 }
 .eigth-group ul {
   list-style: none;
@@ -550,6 +551,13 @@ p {
   width: 25%;
   display: flex;
   justify-content: space-evenly;
+}
+#eigth1-content .icons i:hover {
+  color: #4e66f8;
+}
+.eigth-group ul li a:hover {
+  border-bottom: 1px solid black;
+  width: fit-content;
 }
 footer {
   display: flex;
