@@ -4,6 +4,7 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 nav {
   display: inline-flex;
@@ -115,7 +116,7 @@ nav {
   }
 }
 .slides h4,
-p {
+.slides p {
   position: relative;
   top: 240px;
   left: 160px;
@@ -133,33 +134,32 @@ p {
   color: white;
 }
 .secondary-box {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
   border-radius: 27px;
-  width: 70%;
+  width: 63%;
   height: 55px;
   position: relative;
   top: 210px;
   left: 160px;
   overflow-x: hidden;
   background-color: white;
+  padding: 3px 10px;
 }
 .secondary-box input {
   border: none;
   width: 260px;
   font-size: 18px;
   border-radius: 7px;
-  padding-left: 17px;
   outline: none;
 }
 .secondary-box button {
-  width: 14%;
+  width: 15%;
   border: none;
   border-radius: 27px;
   position: relative;
-  right: 4px;
+  left: 14px;
   top: 3.2px;
-  height: 48px;
+  height: 49px;
   font-weight: bold;
   font-size: larger;
   letter-spacing: 0.1em;
@@ -168,12 +168,12 @@ p {
   cursor: pointer;
 }
 .secondary-box #location-1 {
-  position: relative;
+  display: flex;
+  align-items: center;
+  width: 30%;
 }
 .secondary-box #location {
-  position: absolute;
-  left: 500px;
-  top: 18px;
+  margin-right: 6%;
 }
 .secondary-box #categories {
   display: flex;
@@ -200,9 +200,13 @@ p {
   color: black;
 }
 .container-box {
-  width: 38%;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 7% 33%;
 }
 .container-box h4 {
   letter-spacing: 0.3em;
@@ -272,6 +276,14 @@ p {
   border-radius: 11px;
   cursor: pointer;
   position: relative;
+  transition: 0.5s;
+}
+#image-1:hover,
+#image-2:hover,
+#image-3:hover,
+#image-4:hover,
+#image-5:hover {
+  transform: translateY(-6%);
 }
 #image-1 #content-1,
 #image-2 #content-2,
@@ -324,6 +336,12 @@ p {
   margin-left: 1%;
   width: 93%;
 }
+#sec-image-1 img:hover,
+#sec-image-2 img:hover,
+#sec-image-3 img:hover,
+#sec-image-4 img:hover {
+  transform: scale(1.1);
+}
 #sec-image-1,
 #sec-image-2,
 #sec-image-3,
@@ -338,6 +356,7 @@ p {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  transition: 0.5s;
 }
 .groups {
   display: flex;
@@ -372,9 +391,9 @@ p {
 }
 #holidays {
   position: absolute;
-  left: 110px;
   top: 160px;
-  width: 80%;
+  padding-left: 45px;
+  width: 100%;
   height: 250px;
 }
 #holidays h1 {
@@ -403,9 +422,13 @@ p {
   box-shadow: 1px -1px 6px black;
 }
 .third-content {
-  width: 44%;
+  width: 100%;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 8% 30%;
 }
 .third-content h4 {
   color: #4e66f8;
@@ -449,32 +472,34 @@ p {
   display: flex;
   justify-content: space-evenly;
   margin-top: 5%;
-  margin-left: 1.8%;
-  width: 90%;
 }
 .sixth-group img {
   width: 100%;
   height: 100%;
+  transition: 0.5s;
 }
 #s1-group,
 #s2-group,
 #s3-group {
-  width: 30%;
+  width: 28%;
   overflow: hidden;
   border-radius: 7px;
   cursor: pointer;
 }
+#s1-group img:hover,
+#s2-group img:hover,
+#s3-group img:hover {
+  transform: scale(1.1);
+}
 .seventh-group {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 1.8%;
-  width: 90%;
 }
 #seven1-group,
 #seven2-group,
 #seven3-group {
-  width: 29%;
-  padding-left: 28px;
+  width: 27.5%;
+  padding-left: 30px;
 }
 .seventh-group h3 a,
 .seventh-group h3 {
@@ -552,7 +577,9 @@ p {
   border-radius: 7px;
   outline-offset: 0.1px solid black;
 }
-#eigth4-content #inputWithIcon {
+.eigth-group #inputWithIcon {
+  display: flex;
+  justify-content: space-around;
   position: relative;
 }
 .eigth-group #eigth4-content i {
@@ -596,28 +623,17 @@ footer i {
   #listing {
     display: none;
   }
-  .slides {
-    height: 65vh;
-  }
   .slides h4,
-  p {
+  .slides p {
     position: relative;
     top: 240px;
     left: 60px;
   }
   .secondary-box {
-    width: 93%;
+    width: 87.5%;
     padding: 3px;
     margin-left: -12%;
     margin-top: 2%;
-  }
-  .container-box {
-    margin-top: 13%;
-  }
-  .container-box h4,
-  .container-box h1 {
-    width: 120%;
-    margin-left: -13%;
   }
   .features {
     margin-top: 20%;
@@ -652,22 +668,7 @@ footer i {
   }
   .vacation {
     margin-top: 15%;
-  }
-  .vacation h1 {
-    width: 110%;
-  }
-  #holidays button {
-    width: 20%;
-  }
-  #holidays {
-    margin-left: -7%;
-  }
-  .third-content {
-    margin-top: 13%;
-  }
-  .third-content h1 {
-    width: 130%;
-    margin-left: -13%;
+    height: 570px;
   }
   .fourth-group {
     margin-top: 10%;
@@ -675,16 +676,15 @@ footer i {
   .fifth-group {
     margin-top: 20%;
   }
-  .sixth-group {
-    width: 95%;
+  .eigth-group {
+    padding: 0 25px;
   }
-  .seventh-group {
-    width: 93%;
-  }
-  .eigth-group #ipsum {
-    line-height: 1.8em;
+  #eigth4-content input {
+    width: 90%;
   }
   #sec-icons {
     width: 20%;
   }
+}
+@media screen and (max-width: 768px) {
 }
