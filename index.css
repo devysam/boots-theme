@@ -29,11 +29,12 @@ nav {
 }
 .search-contain {
   width: fit-content;
+  position: relative;
 }
 #search-bar {
   position: absolute;
-  top: 34px;
-  left: 323px;
+  top: 12px;
+  left: 10px;
 }
 .search-contain input {
   border: none;
@@ -46,7 +47,7 @@ nav {
   transition: 0.5s;
 }
 .search-contain input:focus-within {
-  width: 9.3rem;
+  width: 12rem;
 }
 .nav-bar ul {
   display: flex;
@@ -72,7 +73,7 @@ nav {
   top: 2px;
 }
 #listing {
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
   background-color: blue;
   width: 160px;
@@ -162,9 +163,12 @@ p {
   font-weight: bold;
   font-size: larger;
   letter-spacing: 0.1em;
-  background-color: rgba(35, 35, 190, 0.671);
+  background-color: blue;
   color: white;
   cursor: pointer;
+}
+.secondary-box #location-1 {
+  position: relative;
 }
 .secondary-box #location {
   position: absolute;
@@ -267,6 +271,7 @@ p {
   height: 22em;
   border-radius: 11px;
   cursor: pointer;
+  position: relative;
 }
 #image-1 #content-1,
 #image-2 #content-2,
@@ -274,8 +279,8 @@ p {
 #image-4 #content-4,
 #image-5 #content-5 {
   position: absolute;
-  margin-top: 18%;
-  margin-left: 1%;
+  top: 242px;
+  left: 10px;
   color: white;
   font-weight: bold;
   text-shadow: 1.5px 1px 1px black;
@@ -359,7 +364,7 @@ p {
   margin-top: 7%;
   overflow: hidden;
   height: 590px;
-  z-index: -1;
+  position: relative;
 }
 .vacation img {
   width: 100%;
@@ -367,8 +372,8 @@ p {
 }
 #holidays {
   position: absolute;
-  margin-top: 13%;
-  margin-left: 8%;
+  left: 110px;
+  top: 160px;
   width: 80%;
   height: 250px;
 }
@@ -537,6 +542,8 @@ p {
 }
 .eigth-group #ipsum {
   color: #6c757d;
+  font-weight: normal;
+  line-height: 1.5em;
 }
 .eigth-group input {
   padding: 7.5px;
@@ -545,11 +552,14 @@ p {
   border-radius: 7px;
   outline-offset: 0.1px solid black;
 }
+#eigth4-content #inputWithIcon {
+  position: relative;
+}
 .eigth-group #eigth4-content i {
   font-size: x-large;
   position: absolute;
-  right: 100px;
-  top: 4603px;
+  left: 310px;
+  bottom: 8px;
 }
 #eigth1-content .icons {
   width: 25%;
@@ -582,128 +592,99 @@ footer h4 {
 footer i {
   color: white;
 }
-
-@media screen and (max-width: 700px) {
-  body {
-    overflow-x: hidden;
-  }
-  #directory {
-    margin-right: 42%;
-  }
-  .search-contain #search-bar {
-    margin-left: 21%;
-  }
-  .nav-bar {
+@media screen and (max-width: 1024px) {
+  #listing {
     display: none;
   }
-  .slides p {
-    font-size: 60px;
+  .slides {
+    height: 65vh;
+  }
+  .slides h4,
+  p {
+    position: relative;
+    top: 240px;
+    left: 60px;
   }
   .secondary-box {
-    margin-left: -5.5%;
-    height: 198px;
-    display: flex;
-    flex-direction: column;
-  }
-  .secondary-box input,
-  .secondary-box #categories {
-    width: 90%;
-    margin-top: 3%;
-    margin-left: 3%;
-  }
-  .secondary-box #categories {
-    height: 35px;
-    margin-left: 4%;
-  }
-  .secondary-box button {
-    width: 92%;
-    height: 37px;
-    margin-left: 4%;
-    margin-bottom: 3%;
-  }
-  .secondary-box #arrow-up {
-    margin-left: 73%;
-  }
-  .secondary-box #location {
-    margin-left: -17%;
-    margin-top: 9%;
+    width: 93%;
+    padding: 3px;
+    margin-left: -12%;
+    margin-top: 2%;
   }
   .container-box {
-    width: 70%;
-    margin-left: 15%;
     margin-top: 13%;
   }
-  .nested-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  .container-box h4,
+  .container-box h1 {
+    width: 120%;
+    margin-left: -13%;
   }
   .features {
-    margin-top: 12%;
-  }
-  #guides {
-    float: left;
-    margin-top: 2%;
-    margin-left: 5%;
-  }
-  #image-3,
-  #image-4 {
-    width: 40%;
-    margin-top: 10%;
-  }
-  #image-1,
-  #image-2,
-  #image-5 {
-    display: none;
-  }
-  #image-3 #content-3,
-  #image-4 #content-4 {
-    width: 35%;
-    position: absolute;
-    margin-top: 34%;
-    padding-left: 7px;
-  }
-  .secondary-content {
     margin-top: 20%;
   }
-  #guides-1 {
-    float: left;
-    margin-top: 2%;
-    margin-left: 5%;
-  }
-  .secondary-images #sec-image-3,
-  .secondary-images #sec-image-4,
-  .groups #sec-content-3,
-  .groups #sec-content-4 {
+  #image-2 {
     display: none;
   }
-  .secondary-images #sec-image-1,
-  .secondary-images #sec-image-2 {
-    width: 40%;
-    margin-top: 10%;
+  #image-1,
+  #image-3,
+  #image-4,
+  #image-5 {
+    width: 22%;
   }
-  .groups #sec-content-1 {
-    margin-left: 6%;
+  .secondary-content {
+    margin-top: 23%;
   }
-  .groups #sec-content-2 {
-    margin-right: 9%;
+  #sec-image-4,
+  #sec-content-4 {
+    display: none;
+  }
+  #sec-image-1,
+  #sec-image-2,
+  #sec-image-3 {
+    width: 29%;
+    height: 190px;
+  }
+  .secondary-images {
+    width: 97%;
+  }
+  #sec-content-3 {
+    width: 25%;
   }
   .vacation {
-    margin-top: 13%;
-    height: 555px;
+    margin-top: 15%;
   }
-  #holidays h1 {
-    font-size: 55px;
+  .vacation h1 {
+    width: 110%;
   }
   #holidays button {
-    width: 28%;
-    height: 45px;
+    width: 20%;
+  }
+  #holidays {
+    margin-left: -7%;
   }
   .third-content {
-    width: 70%;
-    margin: 15%;
+    margin-top: 13%;
   }
   .third-content h1 {
-    font-size: 2em;
+    width: 130%;
+    margin-left: -13%;
+  }
+  .fourth-group {
+    margin-top: 10%;
+  }
+  .fifth-group {
+    margin-top: 20%;
+  }
+  .sixth-group {
+    width: 95%;
+  }
+  .seventh-group {
+    width: 93%;
+  }
+  .eigth-group #ipsum {
+    line-height: 1.8em;
+  }
+  #sec-icons {
+    width: 20%;
   }
 }
