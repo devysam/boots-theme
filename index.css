@@ -46,6 +46,7 @@ nav {
   padding: 12px 40px;
   font-size: 17px;
   transition: 0.5s;
+  box-shadow: 1px 1px 7px black;
 }
 .search-contain input:focus-within {
   width: 12rem;
@@ -148,9 +149,13 @@ nav {
 .secondary-box input {
   border: none;
   width: 260px;
+  height: 45px;
   font-size: 18px;
   border-radius: 7px;
   outline: none;
+}
+.secondary-box #location-1 input {
+  height: 45px;
 }
 .secondary-box button {
   width: 15%;
@@ -575,7 +580,11 @@ nav {
   font-size: large;
   width: 95%;
   border-radius: 7px;
-  outline-offset: 0.1px solid black;
+  border: 0.1px solid black;
+  outline: none;
+}
+.eigth-group input:focus-within {
+  box-shadow: 1px 1px 7px #4e66f8;
 }
 .eigth-group #inputWithIcon {
   display: flex;
@@ -609,6 +618,7 @@ footer {
 }
 footer h4 {
   color: #dee2de;
+  font-weight: unset;
 }
 #sec-icons {
   width: 15%;
@@ -687,4 +697,237 @@ footer i {
   }
 }
 @media screen and (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  .search-contain {
+    margin-right: 2%;
+  }
+  .slides {
+    height: 740px;
+  }
+  .slides h4,
+  .slides p {
+    width: 85%;
+    text-align: center;
+  }
+  .slides p {
+    font-size: 58px;
+  }
+  .secondary-box {
+    margin-top: 12%;
+    margin-left: -15.5%;
+    height: 250px;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+  }
+  .secondary-box input {
+    width: 97%;
+  }
+  .secondary-box button {
+    height: 40px;
+  }
+  #location-1 {
+    width: 99% !important;
+  }
+  #categories {
+    width: 97% !important;
+  }
+  #arrow-up {
+    position: relative;
+    left: 220px;
+  }
+  .secondary-box button {
+    width: 98%;
+    margin-left: -2%;
+  }
+  .nested-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .images #image-2,
+  .images #image-5 {
+    display: none;
+  }
+  .images #image-1,
+  .images #image-3,
+  .images #image-4 {
+    width: 29%;
+  }
+  .groups {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .vacation {
+    height: 90vh;
+  }
+  #holidays h1 {
+    display: grid;
+    font-size: 60px;
+  }
+  #holidays button {
+    width: 20%;
+  }
+  .third-content h1 {
+    font-size: 35px;
+  }
+  .eigth-group {
+    margin-top: 15%;
+    height: fit-content;
+    display: grid;
+    justify-content: start;
+  }
+  #eigth1-content {
+    width: 100%;
+    margin-top: 15%;
+  }
+  #eigth3-content {
+    position: relative;
+    left: 330px;
+    bottom: 243px;
+  }
+  .eigth-group ul li {
+    font-size: larger;
+  }
+  #eigth4-content {
+    display: grid;
+    grid-template-columns: max-content;
+    width: 100%;
+    position: relative;
+    bottom: 180px;
+  }
+  #eigth4-content input {
+    width: 670px;
+  }
+  #inputWithIcon i {
+    margin-left: 49%;
+  }
+  footer #sec-icons {
+    display: flex;
+    margin-right: 3%;
+    font-size: small;
+  }
+  footer h4 {
+    display: grid;
+    grid-template-columns: max-content;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .search-contain {
+    position: relative;
+    left: 230px;
+    top: -65px;
+  }
+  .search-contain input {
+    width: 23%;
+  }
+  .search-contain input:focus-within {
+    width: 28%;
+  }
+  .slides {
+    height: 707px;
+  }
+  .slides p {
+    font-size: 48px;
+  }
+  .slides h4 {
+    letter-spacing: 0.5em;
+  }
+  .slides h4,
+  .slides p {
+    margin-left: -8%;
+  }
+  .secondary-box {
+    margin-left: -35.5%;
+  }
+  .secondary-box button {
+    margin-left: -4.5%;
+  }
+  .container-box #con-box h1 {
+    letter-spacing: normal;
+  }
+  #guides {
+    float: left;
+    margin: 2% 5.5%;
+  }
+  .images {
+    margin-top: 23%;
+  }
+  .images #image-4 {
+    display: none;
+  }
+  .images #image-1,
+  .images #image-3 {
+    width: 44%;
+  }
+  .secondary-content {
+    margin-top: 30%;
+  }
+  #guides-1 {
+    float: left;
+    margin: 2% 5.5%;
+  }
+  .secondary-images #sec-image-3,
+  .groups #sec-content-3 {
+    display: none;
+  }
+  .secondary-images #sec-image-1,
+  .secondary-images #sec-image-2 {
+    width: 44%;
+    margin-top: 7%;
+  }
+  .groups #sec-content-1,
+  .groups #sec-content-2 {
+    width: 43.5%;
+  }
+  .vacation {
+    height: 80vh;
+    margin-top: 20%;
+  }
+  .vacation h1,
+  #holidays button {
+    margin-left: -6%;
+  }
+  #holidays h1 {
+    font-size: 43px;
+  }
+  #holidays button {
+    width: 35%;
+  }
+  .third-content {
+    margin-top: 12%;
+  }
+  .third-content h1 {
+    font-size: xx-large;
+  }
+  .fourth-group #f2-group {
+    display: none;
+  }
+  .fourth-group #f1-group {
+    width: 70%;
+  }
+  .fifth-group {
+    margin-top: 20%;
+  }
+  .sixth-group #s3-group,
+  .seventh-group #seven3-group {
+    display: none;
+  }
+  .sixth-group #s1-group,
+  .seventh-group #seven1-group,
+  .sixth-group #s2-group,
+  .seventh-group #seven2-group {
+    width: 42.5%;
+  }
 }
