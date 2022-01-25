@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <title>COVID-19 RRA</title>
+    <style>
+        .InputBox input{
+            width: 240%;
+        }
+        .InputBox input:focus-within{
+            box-shadow: inset 0 0 7px rgb(3, 75, 231);
+        }
+        .DOB{
+            font-size: large;
+        }
+        .Read{
+            font-size: smaller;
+        }
+        .InputDate input{
+            width: 8%;
+            height: 50px;
+            margin: .5%;
+            text-align: center;
+        }
+        .InputDate input:focus-within{
+            box-shadow: inset 0 0 7px rgb(3, 75, 231);
+        }
+        .contain{
+            margin-left: 30%;
+        }
+        .varify{
+            margin: -.5% 27%;
+        }
+        .varify input{
+            font-size: smaller;
+            font-weight: 700;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        #check{
+            position: relative;
+            left: 45px;
+            top: 4px;
+        }
+        .varify button{
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="text-center"><p class="border-bottom"><i class="bi bi-at fs-1 text-primary"></i><span class="fw-bold fs-3">ANIA</span><span class="fs-5"> MANAGEMENT</span></p></div>
+        <div class="text-center text-primary border-bottom"><h2>COVID-19 Relief Rental Assistance</h2></div>
+        <div class="column"><p class="col-sm-6 m-auto my-3">If You Completed Rental Assistance Applications In The Office Or On Your Own Please Complete The Form Below. If Not,Scroll Down For The Application Link.</p></div>
+        <div class="InputBox d-grid justify-content-center w-75">
+            <input class="p-2 my-2" type="text" placeholder="Firs Name"/>
+            <input class="p-2 my-2" type="text" placeholder="Last Name"/>
+            <input class="p-2 my-2" type="text" placeholder="Building Address And Apt. Number"/>
+            <input class="p-2 my-2" type="text" placeholder="Your Email"/>
+            <input class="p-2 my-2" type="text" placeholder="Phone Number"/>
+            <input class="p-2 my-2" type="text" placeholder="Passaic County ERAP Application Number"/>
+            <input class="p-2 my-2" type="text" placeholder="DCA Application Number"/>
+        </div>
+        <div class="contain">
+            <label class="DOB">Date Of Birth</label><br><span class="Read">{This Is Required To Look Up The DCA Application}</span>
+            <div class="InputDate"><input type="text" placeholder="MM"/><input type="text" placeholder="DD"/><input type="text" placeholder="YYYY"/></div>
+        </div>
+        <div class="varify">
+            <i id="check" class="bi bi-check fs-1 text-success"></i><input type="text" value="I'm not a robot"/>
+            <button class="py-2 fw-bold mx-1 bg-primary text-white border-0" type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

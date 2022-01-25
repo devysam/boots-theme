@@ -412,19 +412,27 @@ nav {
   letter-spacing: 0.1em;
   border-radius: 5px;
   border: none;
-  box-shadow: 1.5px 1px 1px black;
   width: 14%;
   height: 40px;
   cursor: pointer;
-  background-color: #f8f9fa;
+  box-shadow: 0 0 20px #eee;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
 }
 #holidays a {
   display: block;
   text-decoration: none;
-  color: #212529;
+  color: #f8f9fa;
 }
 #holidays button:hover {
-  box-shadow: 1px -1px 6px black;
+  background-position: right center;
+  color: #fff;
 }
 .third-content {
   width: 100%;
@@ -541,7 +549,7 @@ nav {
   justify-content: space-evenly;
   align-content: center;
   margin-top: 8%;
-  height: 400px;
+  height: 390px;
   background-color: #e9ecef;
 }
 #eigth1-content,
@@ -598,7 +606,7 @@ nav {
   bottom: 8px;
 }
 #eigth1-content .icons {
-  width: 25%;
+  width: 35%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -787,8 +795,8 @@ footer i {
     display: grid;
     justify-content: start;
   }
-  #eigth1-content {
-    width: 100%;
+  #eigth1-content #ipsum {
+    width: 400px;
     margin-top: 15%;
   }
   #eigth3-content {
@@ -929,5 +937,92 @@ footer i {
   .sixth-group #s2-group,
   .seventh-group #seven2-group {
     width: 42.5%;
+  }
+  .eigth-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .eigth-group #eigth1-content #ipsum {
+    width: 100%;
+  }
+  .eigth-group #eigth4-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .eigth-group #eigth3-content {
+    margin-left: -20%;
+  }
+  #inputWithIcon i {
+    padding: 6px 11px;
+    margin: -1.9% 0.5%;
+    border-radius: 4.5px;
+  }
+  #inputWithIcon i:hover {
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+  }
+  #sec-icons {
+    width: 45%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slides p {
+    font-size: 45px;
+  }
+  .secondary-box {
+    margin-left: -41.5%;
+  }
+  .images #image-1,
+  .images #image-3 {
+    width: 90%;
+  }
+  .images #image-3 {
+    margin-top: 13%;
+  }
+  .secondary-images #sec-image-2,
+  .groups #sec-content-2 {
+    display: none;
+  }
+  .secondary-images #sec-image-1 {
+    width: 90%;
+  }
+  .groups #sec-content-1 {
+    width: 80%;
+  }
+  #holidays h1 {
+    width: 90%;
+  }
+  #holidays button {
+    width: 40%;
+  }
+  .sixth-group #s2-group,
+  .seventh-group #seven2-group {
+    display: none;
+  }
+  .sixth-group #s1-group {
+    width: 90%;
+  }
+  .seventh-group #seven1-group {
+    width: 85%;
+  }
+  .eigth-group #eigth3-content {
+    margin-left: -39%;
+  }
+  #inputWithIcon i {
+    margin: -2% -16%;
+    padding-top: 7px;
+  }
+  .search-contain input {
+    margin-left: -15%;
+  }
+  .search-contain i {
+    margin-left: -14%;
   }
 }
