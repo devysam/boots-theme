@@ -1,0 +1,24 @@
+.InputBox {
+  width: 450px;
+}
+.DOB {
+  font-size: large;
+}
+.Read {
+  font-size: smaller;
+}
+.InputDate input:focus-within {
+  box-shadow: inset 0 0 7px rgb(3, 75, 231);
+}
+.varify {
+  height: 55px;
+}
+.inner-varify {
+  width: 450px;
+}
+.InputDate {
+  width: 450px;
+}
+.InputDate div {
+  width: 30%;
+}
